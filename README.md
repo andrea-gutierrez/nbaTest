@@ -28,7 +28,7 @@ Descargar el proyecto de github a una ruta local
 Establecerse en la ruta  **nbaTest**
 ```
 ```
-Se debe ejecutar el comando **npm intalls**, esto con la finalidad de instalar todas las dependencias del proyecto de forma local
+Se debe ejecutar el comando **npm intall**, esto con la finalidad de instalar todas las dependencias del proyecto de forma local
 ```
 ```
 Ejecutar el comando **ng serve**
