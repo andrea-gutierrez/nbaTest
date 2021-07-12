@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PagesRoutingModule } from './pages/pages.routing';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'principal/listajugadores', pathMatch: 'full' },
+  { path: '', redirectTo: 'principal/jugadorescoincidentes', pathMatch: 'full' },
   { path: '**', redirectTo: 'principal/jugadorescoincidentes' }
 ];
 
