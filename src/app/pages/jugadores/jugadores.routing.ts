@@ -12,5 +12,9 @@ export const JugadoresRoutes: Routes = [
     {
         path: 'jugador/:nombre/:apellido',
         component: JugadorComponent
+    },
+    {
+        path: '**',
+        redirectTo: 'principal/jugadoreslista'
     }
 ];
