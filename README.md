@@ -21,9 +21,18 @@ Esta prueba fue desarrollada  con los siguientes caracteristicas:
 Hay dos formas de ejecutar el proyecto,
 1) Se ejecutará desde github en el cual solo se necesitará direccionarse a la siguiente URL: https://andrea-gutierrez.github.io/nbaTest/
 2) Para la ejecución del proyecto de forma local debera contar con la instalación de las carácteristicas mencionadas con anterioridad y seguir los siguientes pasos:      
-*) Descargar el proyecto de github a una ruta local
-*) Establecerse en la ruta  **nbaTest**
-*) Ejecutar el comando **ng serve**
+```
+Descargar el proyecto de github a una ruta local
+```
+```
+Establecerse en la ruta  **nbaTest**
+```
+```
+Se debe ejecutar el comando **npm intalls**, esto con la finalidad de instalar todas las dependencias del proyecto de forma local
+```
+```
+Ejecutar el comando **ng serve**
+```
 
 Posterior a estos pasos  debera de mostrar en el navegador por defecto  la pagina principal (http://localhost:4200/#/principal/)
 
