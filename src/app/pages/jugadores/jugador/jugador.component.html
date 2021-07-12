@@ -1,0 +1,14 @@
+<div class="card m-5">
+    <button class="btn btn-primary" style="max-width: 100px;" type="button" (click)="back()">&laquo; Regresar</button>
+    <div class="card-body">
+        <h5 class="card-title">{{ nombre }} {{ apellido }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">La altura del jugador es: {{ jugador.h_in }} pulgadas</h6>
+        <p>Los jugadores con la misma altura de {{ nombre }} se presentan a continuación: </p>
+
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let jugadores of jugadoresAltura">
+                {{ jugadores.first_name }} {{ jugadores.last_name }}
+            </li>
+        </ul>
+    </div>
+</div>

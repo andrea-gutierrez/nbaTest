@@ -1,0 +1,18 @@
+<div class="m-4 table-responsive">
+    <table class="table text-center">
+        <thead>
+            <tr>
+                <th scope="col" (click)="orderBy( 'first_name' )" class="cursorPointer">Nombre</th>
+                <th scope="col" (click)="orderBy( 'last_name' )" class="cursorPointer">Apellido</th>
+                <th scope="col" (click)="orderBy( 'h_meters' )" class="cursorPointer">Altura (m)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let nbaJugador of nbaJugadores; let i = index" (click)="showDetail( i )" class="cursorPointer">
+                <th scope="row">{{ nbaJugador.first_name }}</th>
+                <td>{{ nbaJugador.last_name }}</td>
+                <td>{{ nbaJugador.h_meters }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

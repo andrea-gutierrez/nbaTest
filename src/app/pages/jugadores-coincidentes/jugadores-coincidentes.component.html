@@ -1,0 +1,33 @@
+<div class="m-4">
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Pulgadas</span>
+        <input type="number" [(ngModel)]="pulgadaInput" class="form-control" placeholder="Ingresa el número en pulgadas"
+            aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <button type="button" class="btn btn-dark" (click)="buscarCoincidencia()">Buscar</button>
+
+    <div *ngIf="showData">
+        <p class="m-3">La cantidad total de parejas son: {{ jugadores.length }}</p>
+
+        <div class="table-responsive">
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre 1</th>
+                        <th scope="col">Altura 1</th>
+                        <th scope="col">Nombre 2</th>
+                        <th scope="col">Altura 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let jugador of jugadores">
+                        <td>{{ jugador.dato1.first_name }} {{ jugador.dato1.last_name }}</td>
+                        <td>{{ jugador.dato1.h_in }}</td>
+                        <td>{{ jugador.dato2.first_name }} {{ jugador.dato2.last_name }}</td>
+                        <td>{{ jugador.dato2.h_in }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
