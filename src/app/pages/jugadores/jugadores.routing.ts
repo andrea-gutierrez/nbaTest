@@ -1,5 +1,4 @@
 import { Routes, RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
 
 import { ListaJugadoresComponent } from './lista-jugadores/lista-jugadores.component';
 import { JugadorComponent } from './jugador/jugador.component';
